@@ -1,0 +1,8 @@
+[advisories]
+ignore = []
+
+[yanked]
+
+[output]
+deny = ["warnings"]
+quiet = false
