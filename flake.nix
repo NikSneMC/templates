@@ -2,6 +2,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-compat.url = "github:NixOS/flake-compat";
+    systems.url = "github:nix-systems/default";
 
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
@@ -16,7 +17,7 @@
 
   outputs = inputs:
     inputs.flake-parts.lib.mkFlake {inherit inputs;} {
-      systems = ["x86_64-linux"];
+      systems = import inputs.systems;
 
       imports = [
         ./git-hooks.nix
