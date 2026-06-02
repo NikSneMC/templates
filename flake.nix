@@ -56,6 +56,10 @@
           path = ./rust/web;
           description = "A simple rust web app";
         };
+        web-bun = {
+          path = ./web/bun;
+          description = "A simple bun project";
+        };
       };
     };
 }
