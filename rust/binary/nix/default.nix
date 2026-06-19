@@ -8,7 +8,7 @@
     _module.args = let
       pkgs = import inputs.nixpkgs {
         inherit system;
-        overlays = [inputs.fenix.overlays.default];
+        overlays = [inputs.naersk.inputs.fenix.overlays.default];
       };
 
       toolchain = pkgs.fenix.fromToolchainFile {
