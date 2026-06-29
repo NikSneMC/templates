@@ -48,6 +48,10 @@
         };
 
       flake.templates = {
+        java-mc = {
+          path = ./java/mc;
+          description = "A simple java minecraft project";
+        };
         rust-binary = {
           path = ./rust/binary;
           description = "A simple rust binary";
