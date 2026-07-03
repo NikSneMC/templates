@@ -56,6 +56,10 @@
           path = ./rust/binary;
           description = "A simple rust binary";
         };
+        rust-library = {
+          path = ./rust/library;
+          description = "A simple rust binary";
+        };
         rust-web = {
           path = ./rust/web;
           description = "A simple rust web app";
